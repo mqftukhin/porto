@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link href="https://fonts.cdnfonts.com/css/bonheur-royale" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/bonheur-royale');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color : var(--maincolor);
+            --maincolor : #fff ;
+            --secondcolor : #111 ;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Belah Kiri */
+        .container1 {
+            height: 100vh;
+            width: 30vw;
+            position: fixed;
+            display: grid;
+            grid-template-rows: 4em 1fr 1fr;
+            padding: 2em;
+        }
+        @media only screen and (max-width: 600px) {
+            .container1  {
+                width: 25vh;
+            }
+        }
+           ul {
+            justify-self: center;
+        }
+        ul li {
+            list-style: none;
+            display: inline;
+
+        }
+        ul li a {
+            color: var(--secondcolor);
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: .2em;
+        }
+        ul li a:hover {
+            font-weight: bolder;
+        }
+        .container1 h1 {
+            color: var(--secondcolor);
+            font-style: italic;
+            text-align: center;
+        }
+        .icon {
+            justify-self: center;
+            list-style: none;
+            display: inline;
+        }
+        i {
+            padding: .5em;
+        }
+        .icon a {
+            color: var(--secondcolor);
+        }
+
+        /* Belah Kanan */
+        .container2 {
+            position: relative;
+            width: 70vw;
+            padding-left: 1em;
+            float: right;
+        }
+        @media only screen and (max-width: 600px) {
+            .container2 {
+                width: 60vw;
+            }
+        }
+
+        /* konten */
+        section {
+            color: var(--secondcolor);
+            height: 100vh;
+            width: 100%;
+            padding-left: 20%;
+            padding-right: 5%;
+            padding-bottom: 7em;
+        }
+        @media only screen and (max-width: 740px){
+             section {
+                height: fit-content;
+            }
+        }   
+        #profile {
+            padding-top: 5em;
+        }     
+        #profile h1 {
+            font-family: 'Segoe Script', sans-serif;
+        }
+        #profile p {
+            width: 35vw;
+        }
+        #project {
+            display: grid;
+            grid-template-rows: repeat(3,1);
+        }
+        .card { 
+            justify-content: start;
+            background-color: var(--maincolor);
+            color: var(--secondcolor);
+            padding: 2em;
+            text-align: justify;
+        }
+        button.btn-darkmode {
+            background-color: var(--secondcolor) ;
+            position: fixed;
+            border-color: var(--maincolor);   
+            height: 2em;
+            width: 2em;
+            border-radius: 50%;
+            bottom: 2em;
+            right: 2em;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .darkmode{
+            --maincolor: #111 ;
+            --secondcolor: #fff;
+        }
+        p {
+            font-style: italic;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/cf177e01b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container1">
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul> 
+        <p><h1>"ambition makes u look pretty ugly, kicking, squeling, gucci little piggy"</h1></p>
+    </div>
+    <div class="container2">
+        <section id="profile">
+            <h1>Maftukhin J Nadwi</h1>
+            </br>
+            <p> live in a constant state of fear and misery,
+                Here we go again, I'll make jokes about your estrogen.
+                That's pretty much the rest, I'm roasting everything.
+                I'm a weird little entity that'll enter titties
+                And bust all over the tummy and little nippies.
+                I know I'm morbid at times, that's how I like to be.
+                They call my dick a mammoth, you salty, you got a micro-D.
+                Classic penis joke inserted with appropriate timing,
+                Cause if I ain't got a penis line, I ain't dining.
+                No homo, but seriously, I'm getting faded and
+                My life is like my vids, low-budget and under-rated.
+                Kids, the only way to succeed is to chip away at the soul
+                And hope that by the time you get there, you ain't singing.
+            </p>
+            </br></br></br></br></br></br></br></br></br></br></br></br> 
+            <p>Work Experience</br><hr></br></p>
+            <P> 2022 - 2023</br>
+                PT Indonesia Epson Industry - 
+                Outgoing Quality Control</br></br>
+                2023 - Present</br>
+                PT Citra Nugerah Karya -
+                Toyota Production System</br></br>
+                2023 - Present</br>
+                Maju Mundur Makmur Corp - 
+                Founder
+            </p>
+        </section>
+        <section id="project">
+                <div class="card">
+                    1Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Voluptatibus optio distinctio omnis voluptatem iste ratione 
+                    modi sapiente dicta repudiandae eos ex consequuntur facilis 
+                    aspernatur voluptates adipisci, dolores nostrum nisi vitae.   
+                </div>
+                <div class="card">
+                    2Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Voluptatibus optio distinctio omnis voluptatem iste ratione 
+                    modi sapiente dicta repudiandae eos ex consequuntur facilis 
+                    aspernatur voluptates adipisci, dolores nostrum nisi vitae.
+                </div>
+                <div class="card">
+                    3Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Voluptatibus optio distinctio omnis voluptatem iste ratione 
+                    modi sapiente dicta repudiandae eos ex consequuntur facilis 
+                    aspernatur voluptates adipisci, dolores nostrum nisi vitae.
+                </div>
+        </section>
+        <section id="contact">
+            <div class="icon">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:maftukhinjafarnadwi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/mqftukhin"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.gg/cNZ6XBK6"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </section>
+    </div>
+    <button class="btn-darkmode"></button>
+    <script type="text/javascript">
+        const btnDarkmode = document.querySelector('.btn-darkmode');
+        
+        btnDarkmode.addEventListener('click', () => {
+            document.body.classList.toggle('darkmode');
+
+        });
+    </script>
+</body>
+</html>
